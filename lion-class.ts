@@ -2,13 +2,13 @@ import {Animal} from "./animal-class";
 import {IsWild} from "./interface-isWild";
 import {CanHunt} from "./interface-canHunt";
 
-class Lion extends Animal implements IsWild, CanHunt {
+export class Lion extends Animal implements IsWild, CanHunt {
     constructor(name: string, age: number, species: string, sound: string) {
         super(name, age, species, sound);
     }
 
     makesound():void{
-        console.log(`${this.name} "makes" ${this.sound}`);
+        console.log(`${this.name} makes ${this.sound}`);
     }
 
     getIfto():string{

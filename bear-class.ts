@@ -2,7 +2,7 @@ import {Animal} from "./animal-class";
 import {IsWild} from "./interface-isWild";
 import {CanHunt} from "./interface-canHunt";
 
-class Bear extends Animal implements IsWild, CanHunt {
+export class Bear extends Animal implements IsWild, CanHunt {
     constructor(name: string, age: number, species: string, sound: string) {
         super(name, age, species, sound);
     }
