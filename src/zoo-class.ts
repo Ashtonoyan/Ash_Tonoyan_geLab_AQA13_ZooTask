@@ -3,7 +3,7 @@ import {Dog} from "./dog-class";
 import {Lion} from "./lion-class";
 import {Bear} from "./bear-class";
 
-export class Zoo{
+export class Zoo {
     private animal: Animal[] = [];
 
     addAnimal(animal: Animal): void {
@@ -16,14 +16,14 @@ export class Zoo{
         console.log(`${animalToDelete.species} ${animalToDelete.name} removed in Zoo`);
     }
 
-    showAnimal():void{
+    showAnimal(): void {
         console.log('In Zoo lives:');
         this.animal.forEach(animal => {
-            console.log(`'Name is' ${animal.name},'age is' ${animal.age}, ${animal.species}`);
+            console.log(`Name is ${animal.name}, age is ${animal.age}, ${animal.species}`);
         })
     }
 
-    showSound():void{
+    showSound(): void {
         console.log('All sound in our Zoo:');
         this.animal.forEach(animal => {
             console.log(`${animal.sound}`)
